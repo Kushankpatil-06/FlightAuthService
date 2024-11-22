@@ -59,19 +59,7 @@ class UserService {
         }
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-     createToken(user) {
+    createToken(user) {
         try {
             const result = jwt.sign(user, JWT_KEY, {expiresIn: '1d'});
             return result;
@@ -113,3 +101,15 @@ class UserService {
 }
 
 module.exports = UserService;
+
+
+
+
+
+
+
+
+
+
+    
+    
